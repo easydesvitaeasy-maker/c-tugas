@@ -24,7 +24,7 @@ jobs:
       - name: Compile C++ to EXE
         shell: msys2 {0}
         run: |
-          g++ -std=c++17 -O2 -static eci.cpp -o main.exe
+          g++ -std=c++17 -O2 -static eci.cpp -o eci.exe
 
       - name: Upload EXE
         uses: actions/upload-artifact@v4
